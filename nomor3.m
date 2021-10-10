@@ -7,7 +7,7 @@ g = 9.81;
 F = -480 * W * D * g;
 k = F / (E * I);
 
-for n=[40, 160, 640]#[40, 160, 640, 2560]
+for n=[40, 160, 640, 2560]
   f = ones(n, 1) * (k * (Lboard / n) ^ 4);
   A = generateBeamConst(n);
   
